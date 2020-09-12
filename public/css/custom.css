@@ -1,0 +1,10 @@
+.razor-pay {
+  width: 100%;
+  height: 150vh;
+}
+
+@media screen and (max-width: 800px) {
+  .banner-logo {
+    width: 100%;
+  }
+}

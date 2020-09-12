@@ -1,0 +1,57 @@
+.soc-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  transform: translate(0, -50%);
+}
+
+.soc-icon {
+  font-size: 2rem;
+  margin: 1rem;
+  color: white !important;
+  border-radius: 50%;
+  padding: 0.5rem 0.6rem;
+}
+
+.soc-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 10px 5px gray;
+}
+
+.soc-icon-fb {
+  padding: 0.5rem 0.85rem;
+  background: #1877f2;
+}
+
+.soc-icon-in {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.soc-icon-tw {
+  background: #1da1f2;
+}
+
+@media screen and (max-width: 800px) {
+  .soc-icons {
+    width: auto;
+
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%) scale(0.8);
+    flex-direction: row;
+  }
+}
