@@ -32,6 +32,10 @@ app.get("/blogs", (req, res) => {
   res.render("blogs", { title: "Blogs" });
 });
 
+app.use(function (req, res, next) {
+  res.status(404).render("notfound", { title: "Page Not Found" });
+});
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {

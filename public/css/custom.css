@@ -6,6 +6,18 @@
   height: 150vh;
 } */
 
+.notfound {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nf-img {
+  height: 300px;
+}
+
 .razor-pay {
   /* position: absolute;
   top: 0;
