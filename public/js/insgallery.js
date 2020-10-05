@@ -276,4 +276,4 @@ posts.forEach((post) => {
     `;
 });
 
-$(".gal-items").html(gallery);
+$(".gal-items-ins").html(gallery);
