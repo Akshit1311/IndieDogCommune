@@ -35,7 +35,7 @@
   right: 0;
   height: 100%;
   border: none; */
-  height: 150vh;
+  height: 170vh;
   width: 100%;
 }
 
@@ -57,7 +57,7 @@
 
 @media screen and (max-height: 600px) {
   .razor-pay {
-    height: 200vh;
+    height: 250vh;
   }
 }
 
