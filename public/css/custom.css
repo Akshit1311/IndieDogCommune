@@ -23,8 +23,9 @@
 }
 
 .camp-img {
-  box-shadow: 1px 1px 30px 1px gray;
+  box-shadow: 1px 1px 30px 1px rgba(128, 128, 128, 0.24);
   transition: 0.3s;
+  border-radius: 0.5rem;
 }
 
 .razor-pay {
@@ -63,13 +64,13 @@
 
 @media screen and (min-width: 800px) {
   .gal-items-camp:hover .camp-img {
-    transform: scale(0.9);
-    opacity: 80%;
+    transform: scale(0.95);
+    opacity: 90%;
   }
 
   .gal-items-camp .camp-img:hover {
-    transform: scale(1.1) !important;
-    box-shadow: 1px 1px 150px 10px gray;
+    transform: scale(1.025) !important;
+    box-shadow: 1px 1px 150px 10px rgba(128, 128, 128, 0.164);
     opacity: 100%;
   }
 }

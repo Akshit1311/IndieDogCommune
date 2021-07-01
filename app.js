@@ -1,42 +1,13 @@
-const express = require("express");
-const ejs = require("ejs");
+import express from "express";
+import path from "path";
+import routesData from "./data/routesData.js";
 
 const app = express();
 
+const __dirname = path.resolve(path.dirname(""));
 app.use(express.static(__dirname + "/public"));
 
 app.set("view engine", "ejs");
-
-const routesData = {
-  "/": {
-    page: "home",
-    data: { title: "Home" },
-  },
-  "/contact": {
-    page: "contact",
-    data: { title: "Contact" },
-  },
-  "/contribute": {
-    page: "contribute",
-    data: { title: "Contribute" },
-  },
-  "/adopt": {
-    page: "adopt",
-    data: { title: "Adopt" },
-  },
-  "/about": {
-    page: "about",
-    data: { title: "About" },
-  },
-  "/gallery": {
-    page: "gallery",
-    data: { title: "Gallery" },
-  },
-  "/team": {
-    page: "team",
-    data: { title: "Team" },
-  },
-};
 
 //Render Routes
 Object.keys(routesData).forEach((route) => {
